@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Flex Box Tutorial</title>
+</head>
+<body>
+    <section id="wrapper">
+        <div class="nav--item item--menu__visible"><a href="#" class="nav--link"><i class="fa fa-bars"></i> Menu</a></div>
+        <nav id="navigation">
+            <ul id="nav--list">
+                <li class="nav--item"><a href="#" class="nav--link">item 01</a></li>
+                <li class="nav--item"><a href="#" class="nav--link">item 02</a></li>
+                <li class="nav--item"><a href="#" class="nav--link">item 03</a></li>
+                <li class="nav--item"><a href="#" class="nav--link">item 04</a></li>
+                <li class="nav--item"><a href="#" class="nav--link">item 05</a></li>
+                <li class="nav--item"><a href="#" class="nav--link">item 06</a></li>
+                <li class="social--nav__item"><a href="#" class="nav--link social--nav__link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="social--nav__item"><a href="#" class="nav--link social--nav__link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="social--nav__item"><a href="#" class="nav--link social--nav__link"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li class="social--nav__item"><a href="#" class="nav--link social--nav__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+
+        <h1 class="heading--primary"><a href="#">What The Flexbox?!</a></h1>
+
+        <article class="description">
+            <p>A simple video course to help you master FlexBox.</p>
+            <p>Sign up today to grab all the videos and exercises!</p>
+        </article>
+
+        <section class="signup">
+            <form action="#" class="signup-form">
+                <input type="text" name="name" id="myname" placeholder="Your Name">
+                <input type="email" name="email" id="myemail" placeholder="Email Address">
+                <input type="submit" value="Sign me up">
+            </form>
+        </section>
+
+        <section class="background">
+            <img src="background-box.jpg" alt="crystal designed box image">
+        </section>
+
+        <footer>
+            <p>&copy;Johnpaul Attamah</p>
+        </footer>
+    </section>
+
+    <script>
+        const menu = document.querySelector('.item--menu__visible');
+        const nav = document.getElementById('navigation');
+
+        menu.addEventListener('click', function() {
+            nav.classList.toggle('visible');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 10px 10px ;
+    border: solid 3px transparent; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px 10px #888;
+    border: solid 3px transparent; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #e470af;
+    background-image: linear-gradient(to right, #e470af, #3694e5);
+}
+
+#wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#navigation {
+    border: 1px solid #000;
+    text-align: center;
+    display: none;
+}
+
+#nav--list {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.nav--item {
+    flex-basis: 100%;
+}
+
+.nav--link, .heading--primary a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: #fff;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, .2);
+    display: inline-block;
+    width: 100%;
+    padding: 2rem 0;
+    text-transform: capitalize;
+    text-align: center;
+    transition: all .5s linear;
+}
+
+.nav--link:hover, .heading--primary a:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.social--nav__item {
+    flex: 1 1 25%;
+}
+
+.nav--item.item--menu__visible, #navigation.visible {
+    display: block;
+}
+
+.heading--primary {
+    margin-top: 2rem;
+}
+
+.heading--primary a{
+    font-size: 3rem;
+    padding: 3rem 0;
+}
+
+.description, .signup, .background, footer {
+    background-color: rgba(0, 0, 0, .2);
+    padding: 3.5rem 0;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.description p, footer p {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 100;
+    line-height: 2rem;
+}
+
+.description p:first-child {
+    margin-bottom: 1rem;
+}
+
+.signup .signup--form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup {
+    padding: 1.8rem;
+}
+
+input {
+    padding: 1rem;
+}
+
+.background {
+    padding: 2rem;
+}
+
+.background img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+
+    #navigation {
+        display: block;
+        width: 100%;
+    }
+
+    .nav--item {
+        flex: 1 1 50%;
+    }
+
+    .nav--item.item--menu__visible {
+        display: none;
+    }
+
+    .heading--primary {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+
+    .description, .signup, .background, footer {
+        margin-top: 2rem;
+    }
+
+    .signup, footer, .description {
+        order: 1;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #wrapper {
+        padding: 0 17rem;
+    }
+
+    .nav--item {
+        flex: 3;
+    }
+
+    .social--nav__item {
+        flex: 1;
+    }
+
+    footer {
+        margin-bottom: 2rem;
+    }
+}
