@@ -34,7 +34,9 @@ This template is a guide meant for you to customize to âœ¨*own it if you want*âœ
 
 #### FlexBox
 * [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-   [Project Inspiration](https://eneax.github.io/learn-flexbox/)
+   
+#### Project Inspiration
+* [Enea Xharja ](https://eneax.github.io/learn-flexbox/)
    
 #### CSS
 * [Mozilla Developer Network: Beginners Guide to CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)
