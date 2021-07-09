@@ -2,7 +2,7 @@
 
 ----
 ## Why the design?
-The [page](https://coming-soon/) is designed to practice and explore basic HTML and CSS and styling using FlexBox.
+The [template](https://johnpaul-attamah.github.io/simple-flexbox-design/) is designed to practice and explore basic HTML and CSS and styling using FlexBox.
 
 This template is a guide meant for you to customize to ✨*own it if you want*✨
 
